@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="402dp"
+        android:layout_height="601dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="1dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/sender_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Sender Address" />
+
+            <Button
+                android:id="@+id/deploy_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Deploy ERC20" />
+
+            <TextView
+                android:id="@+id/txtAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Contract Address" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/contract_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="contract address" />
+
+            <TextView
+                android:id="@+id/txtContractCode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Contract Code" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/contract_code"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="contract code" />
+
+            <TextView
+                android:id="@+id/txtContractStorage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="ContractStorage" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/contract_storage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="contract storage" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/call_data"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Call data" />
+
+            <Button
+                android:id="@+id/btn_call"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Call" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/call_result"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Call result" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
