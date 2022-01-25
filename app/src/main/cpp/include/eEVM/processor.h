@@ -10,6 +10,7 @@
 
 #include <cstdint>
 #include <vector>
+#include <jni.h>
 
 namespace eevm
 {
@@ -59,6 +60,11 @@ namespace eevm
       AccountState callee,
       const std::vector<uint8_t>& input,
       const uint256_t& call_value,
-      Trace* tr = nullptr);
+      //<< MYCODE
+      JNIEnv* jenv,
+      jobject jobj,
+      //>>
+      Trace* tr = nullptr
+    );
   };
 } // namespace eevm

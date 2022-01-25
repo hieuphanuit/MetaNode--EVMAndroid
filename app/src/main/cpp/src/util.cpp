@@ -61,7 +61,7 @@ namespace eevm
   {
     uint8_t byte_data [52u] = {};
     std::memcpy(byte_data, &sender, 20);
-    std::memcpy(byte_data+sizeof(&sender), &sender_last_hash, 32);
+    std::memcpy(byte_data+20, &sender_last_hash, 32);
     
     uint8_t buffer[32u] = {};
     keccak_256(

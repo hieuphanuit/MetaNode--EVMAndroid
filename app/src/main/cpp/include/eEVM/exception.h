@@ -12,7 +12,7 @@ namespace eevm
   class Exception : public std::exception
   {
   public:
-    enum class Type
+    enum class Type : uint8_t
     {
       outOfBounds,
       outOfGas,
